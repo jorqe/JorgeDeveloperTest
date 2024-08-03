@@ -1,0 +1,46 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "number": "123456",
+      "current_balance": 1850.00
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "number": "654321",
+      "current_balance": 2500.00
+    }
+  ] ,
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Grocery Shopping",
+      "debit_credit": "debit",
+      "amount": 150.00,
+      "account_id": 1
+    },
+    {
+      "id": 2,
+      "description": "Salary",
+      "debit_credit": "credit",
+      "amount": 2000.00,
+      "account_id": 1
+    },
+    {
+      "id": 3,
+      "description": "Rent Payment",
+      "debit_credit": "debit",
+      "amount": 500.00,
+      "account_id": 2
+    },
+    {
+      "id": 4,
+      "description": "Freelance Work",
+      "debit_credit": "credit",
+      "amount": 3000.00,
+      "account_id": 2
+    }
+  ]
+}
