@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JorgeDeveloperTest.CRUD;
 using JorgeDeveloperTest.Models;
 using Newtonsoft.Json;
 
@@ -21,13 +22,18 @@ namespace JorgeDeveloperTest
 
             //reading json file 
             string jsonText = File.ReadAllText("D:\\DUsers\\DJorge\\source\\repos\\JorgeDeveloperTest\\JorgeDeveloperTest\\Resources\\Data.json");
-            
             var data = JsonConvert.DeserializeObject<rootobject>(jsonText);
 
             //retrieving acc/transa from root.
             accounts = data.accounts;
             transactions = data.transactions;
+            TransactionsManager.DisplayAccounts(accounts, transactions);
 
+
+
+
+
+            /**
             foreach(Accounts i in accounts) 
                 Console.WriteLine(i.name);
 
@@ -35,9 +41,9 @@ namespace JorgeDeveloperTest
                     Console.WriteLine(t.description);
 
             Console.ReadKey();
-
-
+            **/
 
         }
+
     }
 }

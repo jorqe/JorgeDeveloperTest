@@ -11,5 +11,6 @@ namespace JorgeDeveloperTest
     {
         public List<Accounts> accounts { get; set; }
         public List<Transactions> transactions { get; set; }
+
     }
 }

@@ -42,8 +42,8 @@
     <Compile Include="CRUD\TransactionsManager.cs" />
     <Compile Include="Models\Accounts.cs" />
     <Compile Include="Models\Transactions.cs" />
-    <Compile Include="program.cs" />
-    <Compile Include="rootobject.cs" />
+    <Compile Include="CRUD\program.cs" />
+    <Compile Include="CRUD\rootobject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

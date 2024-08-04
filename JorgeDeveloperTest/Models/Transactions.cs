@@ -12,6 +12,6 @@ namespace JorgeDeveloperTest.Models
         public string description { get; set; }
         public string debit_credit { get; set; }
         public decimal amount { get; set; }
-        public string account_id { get; set; }
+        public int account_id { get; set; }
     }
 }
