@@ -16,7 +16,7 @@ namespace JorgeDeveloperTest
     {
         static void Main(string[] args)
         {
-            //Creating the strucutres to hold information we are going to parse from json. 
+            //Creating the strucutres(list) to hold information we are going to parse from json. 
             List<Accounts> accounts = new List<Accounts>();
             List<Transactions> transactions = new List<Transactions>();
 
@@ -27,6 +27,8 @@ namespace JorgeDeveloperTest
             //retrieving acc/transa from root.
             accounts = data.accounts;
             transactions = data.transactions;
+            //data.accounts and data.transactions were empty list that now hold information pulled from json
+
             TransactionsManager.DisplayAccounts(accounts, transactions);
 
 

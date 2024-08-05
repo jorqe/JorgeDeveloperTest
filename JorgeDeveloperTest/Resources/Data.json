@@ -4,7 +4,7 @@
       "id": 1,
       "name": "John Doe",
       "number": "123456",
-      "current_balance": 1850.00
+      "current_balance": -23203234323432152804.0000001
     },
     {
       "id": 2,
@@ -12,7 +12,7 @@
       "number": "654321",
       "current_balance": 2500.00
     }
-  ] ,
+  ],
   "transactions": [
     {
       "id": 1,
@@ -41,6 +41,34 @@
       "debit_credit": "credit",
       "amount": 3000.00,
       "account_id": 2
+    },
+    {
+      "id": 5,
+      "description": "dennys",
+      "debit_credit": "debit",
+      "amount": 12.0,
+      "account_id": 1
+    },
+    {
+      "id": 6,
+      "description": "President of US",
+      "debit_credit": "credit",
+      "amount": 10000000000000000.0,
+      "account_id": 1
+    },
+    {
+      "id": 7,
+      "description": "TAXES",
+      "debit_credit": "debit",
+      "amount": 23214234323432154642.0,
+      "account_id": 1
+    },
+    {
+      "id": 8,
+      "description": "BOCBANK SALARY",
+      "debit_credit": "credit",
+      "amount": 999999999999999.9999999,
+      "account_id": 1
     }
   ]
 }
