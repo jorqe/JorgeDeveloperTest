@@ -33,8 +33,6 @@ namespace JorgeDeveloperTest
 
 
 
-
-
             /**
             foreach(Accounts i in accounts) 
                 Console.WriteLine(i.name);

@@ -7,6 +7,7 @@ using JorgeDeveloperTest.Models;
 
 namespace JorgeDeveloperTest
 {
+    //maping json data to our C# objects
     public class rootobject
     {
         public List<Accounts> accounts { get; set; }

@@ -4,13 +4,13 @@
       "id": 1,
       "name": "John Doe",
       "number": "123456",
-      "current_balance": -23203234323432152804.0000001
+      "current_balance": 2838.0000000
     },
     {
       "id": 2,
       "name": "Jane Smith",
       "number": "654321",
-      "current_balance": 2500.00
+      "current_balance": 2265.00
     }
   ],
   "transactions": [
@@ -25,7 +25,7 @@
       "id": 2,
       "description": "Salary",
       "debit_credit": "credit",
-      "amount": 2000.00,
+      "amount": 3000.0,
       "account_id": 1
     },
     {
@@ -50,25 +50,25 @@
       "account_id": 1
     },
     {
-      "id": 6,
-      "description": "President of US",
+      "id": 9,
+      "description": "Salary",
       "debit_credit": "credit",
-      "amount": 10000000000000000.0,
-      "account_id": 1
+      "amount": 200.0,
+      "account_id": 2
     },
     {
-      "id": 7,
-      "description": "TAXES",
+      "id": 10,
+      "description": "deal",
       "debit_credit": "debit",
-      "amount": 23214234323432154642.0,
-      "account_id": 1
+      "amount": 300.0,
+      "account_id": 2
     },
     {
-      "id": 8,
-      "description": "BOCBANK SALARY",
-      "debit_credit": "credit",
-      "amount": 999999999999999.9999999,
-      "account_id": 1
+      "id": 11,
+      "description": "cheeseburgers",
+      "debit_credit": "debit",
+      "amount": 135.0,
+      "account_id": 2
     }
   ]
 }
