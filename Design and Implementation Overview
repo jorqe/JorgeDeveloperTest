@@ -1,0 +1,78 @@
+-------------------Project Title: Account and Transaction Management Application
+Objective: Develop a C# application to manage account and transaction data using JSON for data storage and Excel for data export.
+Design Decisions - Architecture
+•	Application Type: Console Application
+•	Data Storage: JSON file for persistent storage
+•	Data Export: Excel file for human-readable format
+Initial Approach:
+I started the development with the idea of developing this application to have a GUI instead of the console application. However, after underestimating the time it would take, I opted for a Console Application.
+Advantages and Disadvantages that were taken into consideration for the console application we opted for 
+Advantages
+1.	Simplicity: Given my limited experience with user interfaces in C# and the time constraints, I chose to develop a console application. The requirements did not specify that a graphical user interface (GUI) was necessary. By opting for a console application, I was able to focus more on implementing the core functionality effectively.
+Disadvantages
+1.	User Experience: I will admit the console application lacks in it not being as intuitive as a GUI.
+Functionality Requirements: CRUD Operations for Transactions - Implementation Steps
+Create:
+- Created classes to match JSON structure and methods to perform CRUD operations.
+- Changed code structure to move each class into its own file for better organization.
+- Created a root class to hold both accounts and transactions.
+- Called the save data method to update the JSON file.
+- Read the JSON file, converted it to a string, and deserialized the JSON string.
+Challenges &Solutions
+Serialization/Deserialization: Learned to handle JSON data in C#, including the need to serialize/deserialize, which was different from my experience with Python.
+
+I spent some time clarifying whether "debit/credit" referred to payment methods or if it meant that  debit indicates a charge and credit indicates an addition to the account. I didn't have a chance to reach out to Cailynn on Friday, but I'll proceed with the assumption that debit decreases the balance and credit increases it. Also, since in the Json provided a transaction entry description was salary with an amount of “2000”. 
+
+Working on this assumption, I am also presuming that the account can have a negative balance. Since the application is designed to manage transactions, I am  assuming that the transactions could result in the account balance going below zero. All transactions will be allowed.
+
+I wanted to note this as debit or credit will not only affect the create method but others as well.
+
+
+Read:
+-Developed methods to read from JSON and display account details.
+-Added console menus to navigate through accounts and transactions.
+
+This was the first step I did in working with JSON with C#. In C#, working with JSON data requires creating a script to handle serialization and deserialization. I would like to note this process took the longest and was essentially the foundation moving forward.
+
+Update:
+-Created methods to update transactions and ensure balances are accurately reflected.
+-Prompted users for transaction ID and new details.
+- Called the save data method to update the JSON file.
+-Adjusted account balances based on updated transaction data.
+
+Challenges &Solutions
+I would also like to note that I encountered issues with updating, deleting, and creating methods as I initially didn't include List<Accounts> accounts since I did not think I initially need it. This omission meant I wasn't updating the account balance correctly after changes. Including List<Accounts> accounts ensured the account balance was updated accurately whenever transactions were modified. 
+
+Delete:
+-Prompted users to enter the unique ID of the transaction to delete.
+-Searched for the transaction ID and removed it from the list.
+-Called the save data method to update the JSON file.
+-Reverted debit/credit effects to update the current balance.
+
+For the purposes of the assessment, I implemented update and delete functionalities in the same straightforward manner as create and read. However, in a real-world scenario, I think it would be better to incorporate higher levels of authentication to restrict update and delete operations to authorized users only.
+
+Json Management 
+- write changes made through CRUD operations in the JSON file to maintain consistency. Instead of only having changes made in memory which is what I initially had. 
+Export to Excel
+- export the current state of the accounts and transactions to an Excel file.
+
+Future Improvements
+- User Interface: Develop a graphical user interface (GUI) for a more intuitive user experience.
+- Error Handling: Enhance error handling and validation for file operations and user inputs.
+- Data Validation: Implement more robust data validation and consistency checks.
+
+
+REFERENCES
+Recalling how to read from json in C#
+https://www.educative.io/answers/how-to-read-a-json-file-in-c-sharp
+https://www.youtube.com/watch?v=k8JCQofLP2Q&t=171s
+Removing and adding items to list in C#
+https://stackoverflow.com/questions/10018957/how-to-remove-item-from-list-in-c
+documentation shows how to retrieve the first item of sequence or list. 
+ https://dotnettutorials.net/lesson/first-and-firstordefault-methods-in-linq/
+Found library called “Closed XML” and find some documentation on GIT
+https://github.com/closedxml/closedxml/wiki/Cell-Values
+
+
+
+	
